@@ -8,7 +8,7 @@ class Main extends Component {
   render() {
     return (
       <HashRouter>
-        <div>
+
           <ul className="header">
             <li>
               <NavLink to="/home">Home</NavLink>
@@ -27,7 +27,6 @@ class Main extends Component {
               <Route exact path="/contact" element={<Contact />} />
             </Routes>
           </div>
-        </div>
       </HashRouter>
     );
   }
