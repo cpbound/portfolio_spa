@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Route, NavLink, HashRouter, Routes } from "react-router-dom";
-import "./index.css";
 import Home from "./Home";
 import Stuff from "./Stuff";
 import Contact from "./Contact";
@@ -10,7 +9,6 @@ class Main extends Component {
     return (
       <HashRouter>
         <div>
-          <h1>SIMPLE SPA</h1>
           <ul className="header">
             <li>
               <NavLink to="/home">Home</NavLink>
