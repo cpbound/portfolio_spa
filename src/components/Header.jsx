@@ -1,12 +1,10 @@
-import React from "react";
 
-const Footer = () => {
+const Header = () => {
   return (
-    <>
-      <h1>Hello from the Header</h1>
-      <button onClick={console.log("Hello")}>Switch</button>
-    </>
+    <header>
+      <h1>My App</h1>
+    </header>
   );
 };
 
-export default Footer;
+export default Header;
