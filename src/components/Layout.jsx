@@ -1,4 +1,4 @@
-import Contact from "../pages/Contact";
+import Footer from "./Footer";
 import Header from "./Header";
 
 const Layout = ({ children }) => {
@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
     <>
       <Header />
       {children}
-      <Contact />
+      <Footer />
     </>
   );
 };
