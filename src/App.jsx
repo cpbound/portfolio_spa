@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Layout from "./components/Layout";
+import Portfolio from "./components/Portfolio";
 
 class Main extends Component {
   render() {
@@ -9,34 +10,10 @@ class Main extends Component {
           <div className="nameHeader">Christian Bound</div>
           <div className="subHeader">The web developer</div>
           <div className="mugshot">
-            <img
-              src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              alt="mugshot"
-            />
+            <img src="/images/avatarpunch.jpg" alt="mugshot" />
           </div>
           <div className="allDetails">
-            <div className="projectsBox">
-              <img
-                className="projectThumbnail"
-                src="https://cdn.pixabay.com/photo/2014/11/04/13/21/lego-516559_960_720.jpg"
-                alt="thumbnail"
-              />
-              <img
-                className="projectThumbnail"
-                src="https://cdn.pixabay.com/photo/2014/11/04/13/21/lego-516559_960_720.jpg"
-                alt="thumbnail"
-              />
-              <img
-                className="projectThumbnail"
-                src="https://cdn.pixabay.com/photo/2014/11/04/13/21/lego-516559_960_720.jpg"
-                alt="thumbnail"
-              />
-              <img
-                className="projectThumbnail"
-                src="https://cdn.pixabay.com/photo/2014/11/04/13/21/lego-516559_960_720.jpg"
-                alt="thumbnail"
-              />
-            </div>
+            <Portfolio />
             <div className="profileBox">
               <p className="profileText">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.

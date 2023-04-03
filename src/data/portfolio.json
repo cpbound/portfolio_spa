@@ -1,0 +1,34 @@
+{
+  "portfolio": [
+    {
+      "cover": "/images/radio-thumb.png",
+      "title": "Radiohead Gloom Index",
+      "description": "Built with MUI and React, using a Radiohead data set to create mood appropriate playlists.",
+      "url": "https://gloom-index.netlify.app/"
+    },
+    {
+      "cover": "/images/wille-thumb.png",
+      "title": "Wille",
+      "description": "An application for memorial and funeral services.",
+      "url": "http://www.mywill-online.cyou/"
+    },
+    {
+      "cover": "/images/jiffy-thumb.png",
+      "title": "Reactor Jiffy",
+      "description": "A GIF search engine using the Giphy API. \nHey look! React practice! Lovely.",
+      "url": "https://reactor-jiff.netlify.app/"
+    },
+    {
+      "cover": "/images/calc-thumb.png",
+      "title": "Calculator",
+      "description": "It's a calculator. Made in React. That's it really.",
+      "url": "https://reactulator-2022.netlify.app/"
+    },
+    {
+      "cover": "/images/weather-thumb.png",
+      "title": "Weather Forecast",
+      "description": "A weather forecast app. Another bit of React practice too.",
+      "url": "https://weathereact-cast.netlify.app/"
+    }
+  ]
+}
