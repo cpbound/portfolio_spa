@@ -19,18 +19,26 @@ const Header = () => {
   return (
     <header>
       <svg
-        width="70%"
-        height="300px"
-        transform="rotate(45)"
+        width="150px"
+        height="150px"
         xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMidYMid meet"
         fill={colour}
         display="block"
-        transform-origin="269px -139px"
       >
         <g>
-          <rect width="300" height="300" x="0" y="0" />
-          <text x="1000" y="1000" fontFamily="Verdana" fill="black" fontSize="35">
-            I love SVG!
+          <polygon points="0,0 150,0 0,150" />
+
+          <text
+            x="20"
+            y="75"
+            transform="rotate(-45 45,85)"
+            fontFamily="Arial"
+            fontWeight="bold"
+            fill="white"
+            fontSize="28"
+          >
+            ACTION
           </text>
         </g>
       </svg>
