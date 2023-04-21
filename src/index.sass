@@ -6,13 +6,14 @@ $georgian: 'Noto Serif Georgian', serif
 $garamond: 'EB Garamond', serif
 
 .container
-  display: grid
+  display: flex
+  flex-direction: row-reverse
 
 .coverPage
-  grid-area: 1/3
+  flex-basis: 50%
 
 .spine
-  grid-area: 1/2
+  flex-basis: 10%
 
   .spineText
     font-family: $georgian
@@ -61,7 +62,7 @@ body
   padding: 0
 
 .mugshot
-  margin: 124px auto
+  margin: 66px auto
   width: fit-content
   height: auto
 
@@ -71,7 +72,8 @@ body
     box-shadow: 0 0 28px 64px #ffffffe6
 
 .backCover
-  margin-top: 20%
+  margin-top: 10%
+  flex-basis: 50%
 
 .allDetails
   background-color: #fff
@@ -100,24 +102,24 @@ body
     box-shadow: 1px 1px 1px 0px #000000
 
 .profileBox
-  flex-basis: 67%
+  flex-basis: 60%
+  padding-left: 32px
 
 .contactBox
   display: flex
   flex-basis: 100%
-  margin: 0 24px
-  padding: 8px
+  justify-content: space-between
+  padding: 16px
 
   .cvLink
     object-fit: contain
-    width: 100px
-    height: 100px
+    width: 175px
+    height: 175px
 
 .socialsBox
   font-family: $georgian
-  border: 8px solid #ff0000
-  margin: auto
-  padding: auto
+  border: 6px solid #ff0000
+  width: 66%
 
   h1
     font-family: $garamond
