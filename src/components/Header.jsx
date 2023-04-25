@@ -42,6 +42,7 @@ const Header = () => {
           </text>
         </g>
       </svg>
+      <img className="home" src="/images/HomeTitle.png" alt="logo" />
     </header>
   );
 };
