@@ -7,12 +7,6 @@
       "url": "https://gloom-index.netlify.app/"
     },
     {
-      "cover": "/images/wille-thumb.png",
-      "title": "Wille",
-      "description": "An application for memorial and funeral services.",
-      "url": "http://www.mywill-online.cyou/"
-    },
-    {
       "cover": "/images/jiffy-thumb.png",
       "title": "Reactor Jiffy",
       "description": "A GIF search engine using the Giphy API. \nHey look! React practice! Lovely.",
@@ -29,6 +23,12 @@
       "title": "Weather Forecast",
       "description": "A weather forecast app. Another bit of React practice too.",
       "url": "https://weathereact-cast.netlify.app/"
+    },
+    {
+      "cover": "/images/wille-thumb.png",
+      "title": "Wille",
+      "description": "An application for memorial and funeral services. Made in 2 weeks at Le Wagon Bootcamp Tokyo. Ruby on Rails with a litte SASS.",
+      "url": "http://www.mywill-online.cyou/"
     }
   ]
 }

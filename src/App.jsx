@@ -1,45 +1,47 @@
-import React, { Component } from "react";
+import React from "react";
+import { useState } from "react";
 import Portfolio from "./components/Portfolio";
 import Socials from "./components/Socials";
-import Header from "./components/Header";
 import Profile from "./components/Profile";
+import Cover from "./components/Cover";
 
-class App extends Component {
-  render() {
-    return (
-      <>
-        <div className="container">
-          <div className="coverPage">
-            <Header />
-            <div className="nameHeader">Christian Bound</div>
-            <div className="subHeader">The web developer</div>
-            <div className="mugshot">
-              <img src="/images/avatarpunch.jpg" alt="mugshot" />
-            </div>
-          </div>
-          <div className="spine">
-            <div className="spineText">Christian Bound</div>
-          </div>
-          <div className="backCover">
-            <img
-              className="backCoverImage"
-              src="/images/HomeTitle.png"
-              alt="backCover"
-            />
-            <div className="allDetails">
-              <Portfolio />
-              <Profile />
+const App = () => {
+  const colourPalette = [
+    "#63399B",
+    "#F7F30A",
+    "#F5341B",
+    "#D76515",
+    "#2BB245",
+    "#0C7EA7",
+    "#F95389",
+  ];
 
-              <div className="contactBox">
-                <img className="cvLink" src="/images/CVQR.png" alt="cvQRcode" />
-                <Socials />
-              </div>
-            </div>
+  const generateColor =
+    colourPalette[Math.floor(Math.random() * colourPalette.length)];
+  const [colour] = useState(generateColor);
+
+  return (
+    <>
+      <div className="container">
+        <Cover colour={colour} />
+        <div className="spine">
+          <div className="spineText">Christian Bound</div>
+        </div>
+        <div className="backCover">
+          <img
+            className="backCoverImage"
+            src="/images/HomeTitle.png"
+            alt="backCover"
+          />
+          <div className="allDetails">
+            <Portfolio />
+            <Profile />
+            <Socials colour={colour} />
           </div>
         </div>
-      </>
-    );
-  }
-}
+      </div>
+    </>
+  );
+};
 
 export default App;

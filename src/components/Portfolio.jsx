@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import portfolioData from "../data/portfolio.json";
 
 const Portfolio = () => {
@@ -7,11 +7,13 @@ const Portfolio = () => {
       <div className="projectsBox">
         {portfolio.map((port, idx) => {
           return (
-            <img
-              className="projectThumbnail"
-              src={port.cover}
-              alt="portfolio"
-            />
+            <a href={port.url}>
+              <img
+                className="projectThumbnail"
+                src={port.cover}
+                alt="portfolio"
+              />
+            </a>
           );
         })}
       </div>

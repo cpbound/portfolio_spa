@@ -1,21 +1,6 @@
 import React from "react";
-import { useState } from "react";
 
-const Header = () => {
-  const colourPalette = [
-    "#63399B",
-    "#F7F30A",
-    "#F5341B",
-    "#D76515",
-    "#2BB245",
-    "#0C7EA7",
-    "#F95389",
-  ];
-
-  const generateColor =
-    colourPalette[Math.floor(Math.random() * colourPalette.length)];
-  const [colour] = useState(generateColor);
-
+const Header = (props) => {
   return (
     <header>
       <svg
@@ -23,7 +8,7 @@ const Header = () => {
         height="150px"
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMidYMid meet"
-        fill={colour}
+        fill={props.colour}
         display="block"
       >
         <g>
