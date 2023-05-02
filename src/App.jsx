@@ -4,7 +4,6 @@ import Portfolio from "./components/Portfolio";
 import Socials from "./components/Socials";
 import Profile from "./components/Profile";
 import Cover from "./components/Cover";
-import Footer from "./components/Footer";
 
 const App = () => {
   const colourPalette = [
