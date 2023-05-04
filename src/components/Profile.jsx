@@ -4,22 +4,30 @@ const Profile = () => {
   return (
     <div className="profileBox">
       <div className="profileText">
-        Here's the autobiographical section. Great stuff! Hailing from the
-        bottom bit of the U.K. and now firmly ensconced in Tokyo, Japan; Chris
-        (in a time prior to the time you're currently reading this sentence now)
-        studied English Literature and Film Studies.
+        🛠️🚧This'll be the profile bit one day. At the moment I'm using it as a
+        notes section. Pretty swell. Master Systems boxes are great, huh? Check
+        out their beauty here:{" "}
+        <a href="https://segaretro.org/Category:Master_System_UK_box_scans">
+          at Sega Retro
+        </a>
         <br />
         <br />
-        After moving to Japan with his wife in 2011, Chris taught English at various
-        international schools in Tokyo before (in the heady days of 2020) he
-        felt a yearning for something beyond the teaching life. He packed in his
-        last teaching gig in early 2022 and completed the full stack web
-        development course at Le Wagon.
+        🛠️🚧The basic layout is okay. It isn't responsive yet but I'll get to
+        that. And it doesn't want to play nice with firefox yet but, again,
+        we'll get to that.
         <br />
         <br />
-        He now divides his time between studying
-        as much about web development as he can, making music, looking after his
-        family, playing video games and sometimes sleeping when the need arises.
+        🛠️🚧 Anyways, just plain white is a little dull so I might add a little
+        plastic or paper texture to the background to make it easier on the eyes
+        and look more like an actual used Master System game box. And a
+        different picture of me too, even if I love that art.
+        <br />
+        <br />
+        🛠️🚧It's May 4th 2023 and I don't care about Star Wars. Added the tool
+        tip to the socials bit below. Better than nothing but I want make it
+        look a little less harsh later. Next up is putting some pop outs or
+        modals for the projects scrollbox on the left and something to point out
+        to users that the images are scrollable and clickable.
       </div>
     </div>
   );

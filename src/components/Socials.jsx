@@ -21,18 +21,23 @@ export default function Socials(props) {
           <div className="socialsLinks">
             <a href="https://github.com/cpbound">
               <FaGithubAlt className="socialIcon" />
+              <span className="tooltiptext">GitHub</span>
             </a>
             <a href="https://soundcloud.com/adult_time">
               <FaSoundcloud className="socialIcon" />
+              <span className="tooltiptext">Soundcloud</span>
             </a>
             <a href="https://adulttime.bandcamp.com/">
               <FaBandcamp className="socialIcon" />
+              <span className="tooltiptext">Bandcamp</span>
             </a>
             <a href="https://www.linkedin.com/in/christian-bound/">
               <FaLinkedin className="socialIcon" />
+              <span className="tooltiptext">LinkedIn</span>
             </a>
             <a href="mailto:cpbound87@gmail.com">
               <FaEnvelope className="socialIcon" />
+              <span className="tooltiptext">Mail me</span>
             </a>
           </div>
         </div>

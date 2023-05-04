@@ -13,7 +13,6 @@ $rubik: 'Rubik', sans-serif
   display: flex
   flex-direction: row-reverse
 
-
 header
   display: flex
   align-items: center
@@ -132,9 +131,12 @@ body
   a
     text-decoration: none
     color: #000
+    display: inline-block
 
   a:hover
     color: #ff0000
+    .tooltiptext
+      visibility: visible
 
   .peripheralTitle
     grid-area: 2/1
@@ -151,6 +153,21 @@ body
     object-fit: contain
     width: 37px
     height: 33px
+
+  .tooltiptext
+    visibility: hidden
+    width: 100px
+    background-color: black
+    color: #fff
+    text-align: center
+    font-family: $rubik
+    padding: 3px 3px
+    border-radius: 8px
+    position: absolute
+    z-index: 1
+    top: 75%
+    margin: -22px -40px
+    transform: rotate(-45deg)
 
   .contactText
     padding-left: 55px
