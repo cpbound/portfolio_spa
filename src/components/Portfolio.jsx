@@ -1,5 +1,6 @@
 import React from "react";
 import portfolioData from "../data/portfolio.json";
+import Modal from "./Modal";
 
 const Portfolio = () => {
   const renderPortfolio = (portfolio) => {
@@ -7,13 +8,7 @@ const Portfolio = () => {
       <div className="projectsBox">
         {portfolio.map((port, idx) => {
           return (
-            <a href={port.url}>
-              <img
-                className="projectThumbnail"
-                src={port.cover}
-                alt="portfolio"
-              />
-            </a>
+              <Modal portfolio={port} />
           );
         })}
       </div>
