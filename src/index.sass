@@ -7,7 +7,16 @@ $garamond: 'EB Garamond', serif
 $rubik: 'Rubik', sans-serif
 
 ::-webkit-scrollbar
-  display: none
+  // display: none
+  width: 0.5em
+
+::-webkit-scrollbar-track
+  box-shadow: inset 4px -4px 4px rgba(0, 0, 0, 0.3)
+
+::-webkit-scrollbar-thumb
+  background-color: black
+  outline: 1px solid black
+  border-radius: 3px
 
 .container
   display: flex
@@ -91,6 +100,7 @@ body
 
   .modalText
     padding: 24px
+    text-align: center
 
 .unstyled-button
   border: none
@@ -107,7 +117,7 @@ body
   padding: 18px
   margin: 0px 8px
 
-.projectsBox
+.projects
   flex-basis: 30%
   overflow-x: hidden
   overflow-y: auto

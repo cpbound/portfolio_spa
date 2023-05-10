@@ -22,7 +22,13 @@ export default function MyComponent(props) {
           <div className="portfolioModal">
             <div className="modalText">
               <h1>{props.portfolio.title}</h1>
-              <a href={props.portfolio.url}>Link!</a>
+              <a href={props.portfolio.url}>
+                <img
+                  className="projectThumbnail"
+                  src={props.portfolio.cover}
+                  alt="portfolio"
+                />
+              </a>
               <p>{props.portfolio.description}</p>
               <button onClick={() => setShowModal(false)}>Close</button>
             </div>

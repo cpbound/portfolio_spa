@@ -5,12 +5,12 @@ import Modal from "./Modal";
 const Portfolio = () => {
   const renderPortfolio = (portfolio) => {
     return (
-      <div className="projectsBox">
-        {portfolio.map((port, idx) => {
-          return (
-              <Modal portfolio={port} />
-          );
-        })}
+      <div className="projects">
+        <div className="projectsBox">
+          {portfolio.map((port, idx) => {
+            return <Modal portfolio={port} />;
+          })}
+        </div>
       </div>
     );
   };
