@@ -40,6 +40,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      <div className="overlay"></div>
     </>
   );
 };

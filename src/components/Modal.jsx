@@ -1,5 +1,6 @@
 import { createPortal } from "react-dom";
 import { useState } from "react";
+import { FaExternalLinkSquareAlt } from "react-icons/fa";
 
 export default function MyComponent(props) {
   let modalRoot = document.querySelector(
@@ -22,12 +23,13 @@ export default function MyComponent(props) {
           <div className="portfolioModal">
             <div className="modalText">
               <h1>{props.portfolio.title}</h1>
-              <a href={props.portfolio.url}>
+              <a target="_blank" rel="noreferrer" href={props.portfolio.url}>
                 <img
                   className="projectThumbnail"
                   src={props.portfolio.cover}
                   alt="portfolio"
                 />
+                <FaExternalLinkSquareAlt className="svg" />
               </a>
               <p>{props.portfolio.description}</p>
               <button onClick={() => setShowModal(false)}>Close</button>
