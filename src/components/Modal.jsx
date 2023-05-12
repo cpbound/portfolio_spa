@@ -1,14 +1,18 @@
 import { createPortal } from "react-dom";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
 
-export default function MyComponent(props) {
+export default function Modal(props) {
   let modalRoot = document.querySelector(
     "body #root .container .backCover .allDetails .profileBox .profileText"
   );
-  console.log(modalRoot);
 
   const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    document.body.addEventListener("click", console.log("clicked"));
+  })
+
   return (
     <>
       <button className="unstyled-button" onClick={() => setShowModal(true)}>
@@ -29,7 +33,7 @@ export default function MyComponent(props) {
                   src={props.portfolio.cover}
                   alt="portfolio"
                 />
-                <FaExternalLinkSquareAlt className="svg" />
+                {/* <FaExternalLinkSquareAlt className="svg" /> */}
               </a>
               <p>{props.portfolio.description}</p>
               <button onClick={() => setShowModal(false)}>Close</button>
