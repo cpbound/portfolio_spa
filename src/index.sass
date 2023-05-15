@@ -99,6 +99,17 @@ body
   width: 25%
   height: 55%
 
+  animation: fadeInAnimation ease 0.3s
+  animation-iteration-count: 1
+  animation-fill-mode: forwards
+
+  @keyframes fadeInAnimation
+    0%
+      opacity: 0
+
+    100%
+      opacity: 1
+
   .unstyled-button
     border: none
     padding: 0
@@ -114,18 +125,15 @@ body
     width: 60%
     box-shadow: 1px 1px 5px 1px #BDBCBB
 
-  .svg
-    position: absolute
-    font-size: 300%
-    top: 62%
-    left: 65%
-    color: #000
-    opacity: 0.6
-
 .unstyled-button
   border: none
   padding: 0
   background: none
+  h1
+    font-family: $georgian
+  p
+    font-family: $rubik
+
 
 .allDetails
   background-color: #fff
