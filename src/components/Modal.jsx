@@ -1,6 +1,5 @@
 import { createPortal } from "react-dom";
-import { useState, useEffect, useRef } from "react";
-import { FaExternalLinkSquareAlt } from "react-icons/fa";
+import { useState } from "react";
 
 export default function Modal(props) {
   let modalRoot = document.querySelector(
@@ -8,10 +7,6 @@ export default function Modal(props) {
   );
 
   const [showModal, setShowModal] = useState(false);
-
-  useEffect(() => {
-    document.body.addEventListener("click", console.log("clicked"));
-  })
 
   return (
     <>
@@ -25,19 +20,22 @@ export default function Modal(props) {
       {showModal &&
         createPortal(
           <div className="portfolioModal">
-            <div className="modalText">
-              <h1>{props.portfolio.title}</h1>
-              <a target="_blank" rel="noreferrer" href={props.portfolio.url}>
-                <img
-                  className="projectThumbnail"
-                  src={props.portfolio.cover}
-                  alt="portfolio"
-                />
-                {/* <FaExternalLinkSquareAlt className="svg" /> */}
-              </a>
-              <p>{props.portfolio.description}</p>
-              <button onClick={() => setShowModal(false)}>Close</button>
-            </div>
+            <button
+              className="unstyled-button"
+              onClick={() => setShowModal(false)}
+            >
+              <div className="modalText">
+                <h1>{props.portfolio.title}</h1>
+                <a target="_blank" rel="noreferrer" href={props.portfolio.url}>
+                  <img
+                    className="projectThumbnail"
+                    src={props.portfolio.cover}
+                    alt="portfolio"
+                  />
+                </a>
+                <p>{props.portfolio.description}</p>
+              </div>
+            </button>
           </div>,
           modalRoot
         )}
