@@ -75,7 +75,7 @@ export default function Socials(props) {
         </div>
         <div className="footer">
           <div className="footerText">
-            2023 © Christian Bound {"\n"} Made In Japan 2023-05-01 {"\n"} Sega
+            2023 © Christian Bound {"\n"} Made In Japan {"\n"} Sega
             logo style font from{" "}
             <a
               target="_blank"
@@ -83,7 +83,17 @@ export default function Socials(props) {
               href="https://actselect.chips.jp/"
             >
               https://actselect.chips.jp/
+            </a>{" "}
+            {"\n"}
+            Cover image by{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://stablediffusionweb.com/"
+            >
+              Stable Diffusion.
             </a>
+             {" "}Prompt: "8 bit Tokyo Skyline at Night"
           </div>
           <img
             className="footerTitle"
