@@ -92,8 +92,8 @@ export default function Socials(props) {
               href="https://stablediffusionweb.com/"
             >
               Stable Diffusion.
-            </a>
-             {" "}Prompt: "8 bit Tokyo Skyline at Night"
+            </a>{"\n"}
+             Prompt: {<i>"8 bit Tokyo Skyline at Night"</i>}
           </div>
           <img
             className="footerTitle"
