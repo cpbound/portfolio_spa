@@ -1,11 +1,21 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Portfolio from "./components/Portfolio";
 import Socials from "./components/Socials";
 import Profile from "./components/Profile";
 import Cover from "./components/Cover";
+import { JellyTriangle } from "@uiball/loaders";
 
 const App = () => {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
+
   const colourPalette = [
     "#63399B",
     "#F7F30A",
@@ -22,25 +32,31 @@ const App = () => {
 
   return (
     <>
-      <div className="container">
-        <Cover colour={colour} />
-        <div className="spine">
-          <div className="spineText">Christian Bound</div>
+      {loading ? (
+        <div className="loader-container">
+          <JellyTriangle size={200} speed={1.25} color="black" />
         </div>
-        <div className="backCover">
-          <img
-            className="backCoverImage"
-            src="/images/HomeTitle.png"
-            alt="backCover"
-          />
-          <div className="allDetails">
-            <Portfolio />
-            <Profile />
-            <Socials colour={colour} />
+      ) : (
+        <div className="container">
+          <Cover colour={colour} />
+          <div className="spine">
+            <div className="spineText">Christian Bound</div>
           </div>
+          <div className="backCover">
+            <img
+              className="backCoverImage"
+              src="/images/HomeTitle.png"
+              alt="backCover"
+            />
+            <div className="allDetails">
+              <Portfolio />
+              <Profile />
+              <Socials colour={colour} />
+            </div>
+          </div>
+          <div className="overlay"></div>
         </div>
-      </div>
-      <div className="overlay"></div>
+      )}
     </>
   );
 };
