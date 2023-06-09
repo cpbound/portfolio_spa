@@ -4,17 +4,22 @@ import Portfolio from "./components/Portfolio";
 import Socials from "./components/Socials";
 import Profile from "./components/Profile";
 import Cover from "./components/Cover";
-import { JellyTriangle } from "@uiball/loaders";
 
 const App = () => {
-  const [loading, setLoading] = useState(false);
+  const authenticate = () =>
+    new Promise((resolve) => setTimeout(resolve, 2500));
 
   useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 4000);
-  }, []);
+    authenticate().then(() => {
+      const loaderElement = document.getElementById("loader-container");
+      if (loaderElement) {
+        loaderElement.classList.add("available");
+        setTimeout(() => {
+          loaderElement.remove();
+        }, 2500);
+      }
+    });
+  });
 
   const colourPalette = [
     "#63399B",
@@ -31,33 +36,25 @@ const App = () => {
   const [colour] = useState(generateColor);
 
   return (
-    <>
-      {loading ? (
-        <div className="loader-container">
-          <JellyTriangle size={200} speed={1.25} color="black" />
+    <div className="container">
+      <Cover colour={colour} />
+      <div className="spine">
+        <div className="spineText">Christian Bound</div>
+      </div>
+      <div className="backCover">
+        <img
+          className="backCoverImage"
+          src="/images/HomeTitle.png"
+          alt="backCover"
+        />
+        <div className="allDetails">
+          <Portfolio />
+          <Profile />
+          <Socials colour={colour} />
         </div>
-      ) : (
-        <div className="container">
-          <Cover colour={colour} />
-          <div className="spine">
-            <div className="spineText">Christian Bound</div>
-          </div>
-          <div className="backCover">
-            <img
-              className="backCoverImage"
-              src="/images/HomeTitle.png"
-              alt="backCover"
-            />
-            <div className="allDetails">
-              <Portfolio />
-              <Profile />
-              <Socials colour={colour} />
-            </div>
-          </div>
-          <div className="overlay"></div>
-        </div>
-      )}
-    </>
+      </div>
+      <div className="overlay"></div>
+    </div>
   );
 };
 

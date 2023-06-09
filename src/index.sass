@@ -90,11 +90,8 @@ $rubik: 'Rubik', sans-serif
   70%
     transform: none
 
-.container
-  width: 100vw
-  height: 100vh
-  display: flex
-  flex-direction: row-reverse
+body
+  margin: 0
 
 header
   display: flex
@@ -103,6 +100,16 @@ header
   img
     width: 50%
     padding-left: 2em
+
+.container
+  width: 100vw
+  height: 100vh
+  display: flex
+  flex-direction: row-reverse
+  background-color: #fff
+  background-image: url("./assets/MSbackTile.png")
+  background-repeat: repeat
+  background-size: 20%
 
 .coverPage
   flex-basis: 52%
@@ -115,13 +122,6 @@ header
     font-size: 3em
     writing-mode: vertical-rl
     padding: 0.8em
-
-body
-  background-color: #fff
-  background-image: url("./assets/MSbackTile.png")
-  background-repeat: repeat
-  background-size: 20%
-  margin: 0
 
 .nameHeader
   font-family: $georgian
@@ -337,12 +337,13 @@ body
   justify-content: center
   align-content: center
   flex-wrap: wrap
-  background-image: url("./assets/MSbackTile.png")
+  background-color: #fff
   background-repeat: repeat
   background-size: 20%
   margin: 0
-  pointer-events: none
-  animation:  fadeOutAnimation ease 3s
+
+.loader-container.available
+  animation: fadeOutAnimation ease 3s
   animation-iteration-count: 1
   animation-fill-mode: forwards
 
