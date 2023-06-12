@@ -19,8 +19,8 @@ $rubik: 'Rubik', sans-serif
   border-radius: 3px
 
 .jelly-triangle
-  --uib-size: 44px
-  --uib-speed: 1.75s
+  --uib-size: 200px
+  --uib-speed: 2.00s
   --uib-color: black
 
   justify-content: center
@@ -265,11 +265,12 @@ header
 
   a:hover
     color: #005DA3
-    .tooltiptext
-      visibility: visible
 
   .peripheralTitle
     grid-area: 2/1
+
+  .playerTitle
+    grid-column-start: span 2
 
   .socialsLinks
     grid-area: 2/2
@@ -284,20 +285,20 @@ header
     width: 2em
     height: 1.7em
 
-  .tooltiptext
-    visibility: hidden
-    width: 100px
-    background-color: black
-    color: #fff
-    text-align: center
-    font-family: $rubik
-    padding: 0.2em 0.2em
-    border-radius: 8px
-    position: absolute
-    z-index: 1
-    top: 75%
-    margin: -22px -40px
-    transform: rotate(-45deg)
+  // .tooltiptext
+  //   visibility: hidden
+  //   width: 100px
+  //   background-color: black
+  //   color: #fff
+  //   text-align: center
+  //   font-family: $rubik
+  //   padding: 0.2em 0.2em
+  //   border-radius: 8px
+  //   position: absolute
+  //   z-index: 1
+  //   top: 75%
+  //   margin: -22px -40px
+  //   transform: rotate(-45deg)
 
   .contactText
     padding-left: 4em
