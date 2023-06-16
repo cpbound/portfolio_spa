@@ -21,6 +21,7 @@ export default function Socials(props) {
     });
   };
   getAttributes();
+
   return (
     <div className="contactBox">
       <a className="cvLink" target="_blank" href={Pdf} rel="noreferrer">
@@ -29,7 +30,7 @@ export default function Socials(props) {
       <div className="contactText">
         <div
           className="socialsBox"
-          style={{ border: `4px solid ${props.colour}` }}
+          style={{ border: `0.4vw solid ${props.colour}` }}
         >
           <h1 className="playerTitle">PLAYERS: {social}</h1>
           <h1 className="peripheralTitle">PERIPHERALS:</h1>
@@ -38,37 +39,42 @@ export default function Socials(props) {
               target="_blank"
               rel="noreferrer"
               href="https://www.linkedin.com/in/christian-bound/"
-              onMouseEnter={() => setSocial("  LinkedIn")}
+              onMouseEnter={() =>
+                setSocial(<i style={{ color: `${props.colour}` }}>LinkedIn</i>)
+              }
               onMouseLeave={() => setSocial("")}
             >
               <FaLinkedin className="socialIcon" />
-
             </a>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://github.com/cpbound"
-              onMouseEnter={() => [setSocial("  GitHub"), ]}
+              onMouseEnter={() => [
+                setSocial(<i style={{ color: `${props.colour}` }}>Github</i>),
+              ]}
               onMouseLeave={() => setSocial("")}
             >
               <FaGithubAlt className="socialIcon" />
-
             </a>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://medium.com/@cpbound87"
-              onMouseEnter={() => setSocial("  Medium")}
+              onMouseEnter={() =>
+                setSocial(<i style={{ color: `${props.colour}` }}>Medium</i>)
+              }
               onMouseLeave={() => setSocial("")}
             >
               <FaMediumM className="socialIcon" />
-
             </a>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://soundcloud.com/adult_time"
-              onMouseEnter={() => setSocial("  Soundcloud")}
+              onMouseEnter={() =>
+                setSocial(<i style={{ color: `#005DA3` }}>Soundcloud</i>)
+              }
               onMouseLeave={() => setSocial("")}
             >
               <FaSoundcloud className="socialIcon" />
@@ -77,7 +83,9 @@ export default function Socials(props) {
               target="_blank"
               rel="noreferrer"
               href="https://adulttime.bandcamp.com/"
-              onMouseEnter={() => setSocial("  BandCamp")}
+              onMouseEnter={() =>
+                setSocial(<i style={{ color: `#005DA3` }}>BandCamp</i>)
+              }
               onMouseLeave={() => setSocial("")}
             >
               <FaBandcamp className="socialIcon" />
@@ -86,7 +94,9 @@ export default function Socials(props) {
               target="_blank"
               rel="noreferrer"
               href="mailto:cpbound87@gmail.com"
-              onMouseEnter={() => setSocial(<>Mail Me</>)}
+              onMouseEnter={() =>
+                setSocial(<i style={{ color: `#005DA3` }}>Mail Me</i>)
+              }
               onMouseLeave={() => setSocial("")}
             >
               <FaEnvelope className="socialIcon" />

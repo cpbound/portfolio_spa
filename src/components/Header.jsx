@@ -2,33 +2,34 @@ import React from "react";
 
 const Header = (props) => {
   return (
-    <header>
+    <div className="header">
       <svg
-        width="150px"
-        height="150px"
+        viewBox="0 0 150 125"
+        width="25%"
+        height="25%"
         xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="xMidYMid meet"
+        preserveAspectRatio="xminYMin slice"
         fill={props.colour}
         display="block"
       >
         <g>
-          <polygon points="0,0 150,0 0,150" />
+          <polygon points="0,0 150,0 0,125" />
 
           <text
-            x="20"
-            y="75"
-            transform="rotate(-45 45,85)"
-            fontFamily="Arial"
-            fontWeight="bold"
-            fill="white"
-            fontSize="28"
-          >
-            ACTION
-          </text>
+              x="25"
+              y="73"
+              transform="rotate(-40 40,85)"
+              fontFamily="Arial"
+              fontWeight="600"
+              fill="white"
+              fontSize="26"
+              >
+              ACTION
+            </text>
         </g>
       </svg>
       <img className="home" src="/images/HomeTitle.png" alt="logo" />
-    </header>
+    </div>
   );
 };
 
