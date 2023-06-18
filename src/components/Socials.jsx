@@ -13,14 +13,14 @@ import Pdf from "../assets/Christian_Bound_Resume.pdf";
 export default function Socials(props) {
   const [social, setSocial] = useState("");
 
-  const getAttributes = (e) => {
-    const elements = document.getElementsByClassName("tooltiptext");
+  // const getAttributes = (e) => {
+  //   const elements = document.getElementsByClassName("tooltiptext");
 
-    Array.from(elements).forEach((element) => {
-      console.log(element.innerHTML);
-    });
-  };
-  getAttributes();
+  //   Array.from(elements).forEach((element) => {
+  //     console.log(element.innerHTML);
+  //   });
+  // };
+  // getAttributes();
 
   return (
     <div className="contactBox">
@@ -40,7 +40,7 @@ export default function Socials(props) {
               rel="noreferrer"
               href="https://www.linkedin.com/in/christian-bound/"
               onMouseEnter={() =>
-                setSocial(<i style={{ color: `${props.colour}` }}>LinkedIn</i>)
+                setSocial(<i style={{ color: `#005DA3` }}>LinkedIn</i>)
               }
               onMouseLeave={() => setSocial("")}
             >
@@ -51,7 +51,7 @@ export default function Socials(props) {
               rel="noreferrer"
               href="https://github.com/cpbound"
               onMouseEnter={() => [
-                setSocial(<i style={{ color: `${props.colour}` }}>Github</i>),
+                setSocial(<i style={{ color: `#005DA3` }}>Github</i>),
               ]}
               onMouseLeave={() => setSocial("")}
             >
@@ -62,7 +62,7 @@ export default function Socials(props) {
               rel="noreferrer"
               href="https://medium.com/@cpbound87"
               onMouseEnter={() =>
-                setSocial(<i style={{ color: `${props.colour}` }}>Medium</i>)
+                setSocial(<i style={{ color: `#005DA3` }}>Medium</i>)
               }
               onMouseLeave={() => setSocial("")}
             >

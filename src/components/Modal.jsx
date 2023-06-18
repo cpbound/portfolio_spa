@@ -10,17 +10,16 @@ export default function Modal(props) {
 
   return (
     <>
-      <button className="unstyled-button" onClick={() => setShowModal(true)}>
         <img
           className="projectThumbnail"
           src={props.portfolio.cover}
           alt="portfolio"
+          onClick={() => setShowModal(true)}
         />
-      </button>
       {showModal &&
         createPortal(
           <div className="portfolioModal">
-            <button
+            <div
               className="unstyled-button"
               onClick={() => setShowModal(false)}
             >
@@ -35,7 +34,7 @@ export default function Modal(props) {
                 </a>
                 <p>{props.portfolio.description}</p>
               </div>
-            </button>
+            </div>
           </div>,
           modalRoot
         )}
