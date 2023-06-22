@@ -7,20 +7,12 @@ import {
   FaLinkedin,
   FaEnvelope,
   FaMediumM,
+
 } from "react-icons/fa";
 import Pdf from "../assets/Christian_Bound_Resume.pdf";
 
 export default function Socials(props) {
   const [social, setSocial] = useState("");
-
-  // const getAttributes = (e) => {
-  //   const elements = document.getElementsByClassName("tooltiptext");
-
-  //   Array.from(elements).forEach((element) => {
-  //     console.log(element.innerHTML);
-  //   });
-  // };
-  // getAttributes();
 
   return (
     <div className="contactBox">
