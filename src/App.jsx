@@ -43,7 +43,7 @@ const App = () => {
       </div>
       <div className="backCover">
         <img
-          className="backCoverImage"
+          className="homePng"
           src="/images/HomeTitle.png"
           alt="backCover"
         />

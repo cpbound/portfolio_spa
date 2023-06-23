@@ -97,8 +97,8 @@ body
   display: flex
   align-items: center
 
-  img
-    width: 50%
+.homePng
+  width: 50%
 
 .container
   width: 100vw
@@ -151,12 +151,9 @@ body
     border-radius: 6%
 
 .backCover
-  margin-top: 3vh
+  margin-top: 2.8vh
   flex-basis: 50%
   text-align: center
-
-  img
-    width: 23vw
 
 .portfolioModal
   background: white
@@ -343,4 +340,12 @@ body
     100%
       opacity: 0
 
-  // DARK MODE BABY
+$layout-breakpoint-small: 1200px
+
+@media (max-width: $layout-breakpoint-small)
+  .container
+    flex-direction: column
+
+  .spine
+    display: none
+    visibility: hidden

@@ -28,7 +28,7 @@ const Header = (props) => {
             </text>
         </g>
       </svg>
-      <img className="home" src="/images/HomeTitle.png" alt="logo" />
+      <img className="homePng" src="/images/HomeTitle.png" alt="logo" />
     </div>
   );
 };
