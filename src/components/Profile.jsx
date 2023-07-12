@@ -17,13 +17,10 @@ const Profile = () => {
         we'll get to that.
         <br />
         <br />
-        🛠️🚧It's May 15th 2023, so it's my birthday and I've been gainfully
-        unemployed for a year! Excellent! The page now has a lovely texture to
-        take the harshness off that white. It's mostly working now apart from
-        being responsive. And a loader and some animations too to tidy things up a bit. Once that's done, I'm going to sort out darkmode and
-        then a more accessible version for screen readers and mobile devices.
-        Still, it mostly looks like a Master System box which was really what I
-        wanted to achieve.
+        🛠️🚧It's already June. Making this thing took way longer than I thought
+        but there you go. Trying to fit it in around part time jobs sucked but
+        was fun as hell when I got the chance to work on it. Desktop is done,
+        mobile is almost there. And I still think Master System boxes are great.
       </div>
     </div>
   );

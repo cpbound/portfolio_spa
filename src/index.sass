@@ -199,16 +199,17 @@ body
   .projectThumbnail:hover
     box-shadow: inset 0.2vh 0.2vh #000000
 
-  h1
-    font-family: $georgian
-    margin: 1.4vh
-  p
-    font-family: $rubik
+.projectHeader
+  font-family: $georgian
+  margin: 1.4vh
+
+.projectDescription
+  font-family: $rubik
 
 .allDetails
   background-color: #fff
   border: 0.5vh solid #000
-  border-radius: 2%
+  border-radius: 16px
   display: flex
   flex-wrap: wrap
   flex-direction: row
@@ -222,14 +223,14 @@ body
   padding: 0 1vw
   height: 53vh
 
-  .projectThumbnail
-    object-fit: cover
-    border-radius: 3%
-    width: 100%
-    box-shadow: 0.2vh 0.2vh #BDBCBB
+.projectThumbnail
+  object-fit: cover
+  border-radius: 3%
+  width: 100%
+  box-shadow: 0.2vh 0.2vh #BDBCBB
 
-  .projectThumbnail:hover
-    box-shadow: inset 0.2vh 0.2vh #000000
+.projectThumbnail:hover
+  box-shadow: inset 0.2vh 0.2vh #000000
 
 .profileBox
   font-family: $rubik
@@ -249,11 +250,12 @@ body
     display: contents
 
   .qrCode
-    width: 25%
+    width: 28%
+    object-fit: contain
 
   .socialsBox
     display: grid
-    padding: 2% 6%
+    padding: 1vh 1vw
     font-family: $georgian
     border: 0.2vh solid
 
@@ -340,12 +342,104 @@ body
     100%
       opacity: 0
 
+// MOBILE FOLLOWS
+
 $layout-breakpoint-small: 1200px
 
 @media (max-width: $layout-breakpoint-small)
   .container
     flex-direction: column
 
+  .nameHeader
+    font-size: 20vw
+
+  .subHeader
+    font-size: 10vw
+
   .spine
     display: none
     visibility: hidden
+
+  .allDetails
+    flex-direction: column
+    padding: 0
+
+  .projectsModal
+    display: grid
+    align-items: center
+
+    a
+      grid-row-start: span 2
+      width: 30vw
+      margin: 1vw
+
+    .projectHeader
+      font-size: 2.5vh
+      grid-area: 1 / 2
+
+    .projectDescription
+      font-size: 2vh
+      grid-area: 2/2
+      margin: 2vw
+
+  .profileBox
+    padding: 2vw
+
+  .contactBox
+    display: flex
+    flex-basis: 100%
+    flex-direction: row
+    justify-content: space-between
+    padding: 1vh 1vw 0
+
+  .socialsBox
+    display: grid
+    padding: 1vh 1vw
+    font-family: $georgian
+    border: 0.2vh solid
+
+    a
+      text-decoration: none
+      color: #000
+      display: inline-block
+
+    a:hover
+      color: #005DA3
+
+    .peripheralTitle
+      grid-area: 2/1
+      margin-top: 0.7vh
+
+    .playerTitle
+      grid-column-start: span 2
+
+    .socialsLinks
+      grid-area: 2/2
+      font-size: 3vh
+
+    h1
+      margin: 0em
+      font-size: 2vh
+      text-align: left
+
+    .socialIcon
+      object-fit: contain
+      padding-right: 0.2vw
+
+    .contactText
+      padding-left: 4.5vw
+
+    .footer
+      display: flex
+      text-align: left
+      justify-content: space-between
+      padding-top: 2.5vh
+
+    .footerText
+      font-family: $georgian
+      font-size: 1vh
+      white-space: pre-line
+
+    .footerTitle
+      object-fit: contain
+      width: 45%
