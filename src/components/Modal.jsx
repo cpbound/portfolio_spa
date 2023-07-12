@@ -1,5 +1,5 @@
 import { createPortal } from "react-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { FaWindowClose, FaExternalLinkSquareAlt } from "react-icons/fa";
 
 export default function Modal(props) {

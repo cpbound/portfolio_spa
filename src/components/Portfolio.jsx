@@ -1,7 +1,6 @@
 import React from "react";
 import portfolioData from "../data/portfolio.json";
 import Modal from "./Modal";
-import { useEfect, useState } from "react";
 
 const Portfolio = () => {
   const renderPortfolio = (portfolio) => {
