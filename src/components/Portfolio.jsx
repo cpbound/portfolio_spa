@@ -11,7 +11,7 @@ const Portfolio = () => {
         <div className="projects">
           <div className="projectsBox">
             {portfolio.map((port, idx) => {
-              return <Modal portfolio={port} />;
+              return <Modal key={idx} portfolio={port} />;
             })}
           </div>
         </div>
@@ -19,20 +19,20 @@ const Portfolio = () => {
     } else {
       return (
         <div className="projectsBox">
-          {portfolio.map((port, idx) => {
+          {portfolio.map((port, idx) =>  {
             return (
-              <div className="projectsModal">
+                <div key={idx} id={idx + 1} className="projectsModal" style={idx % 2 === 0 ? { backgroundColor: 'whitesmoke', borderRadius: 16} : {}}>
                 <a target="_blank" rel="noreferrer" href={port.url}>
-                  <img
-                    className="projectThumbnail"
-                    src={port.cover}
-                    alt="portfolio"
-                  />
+                <img
+                className="projectThumbnail"
+                src={port.cover}
+                alt="portfolio"
+                />
                 </a>
                 <h1 className="projectHeader">{port.title}</h1>
                 <p className="projectDescription">{port.description}</p>
-              </div>
-            );
+                </div>
+                );
           })}
         </div>
       );
