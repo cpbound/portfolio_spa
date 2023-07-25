@@ -16,15 +16,15 @@ const Header = (props) => {
           <polygon points="0,0 150,0 0,125" />
 
           <text
-              x="25"
-              y="73"
+              x="34"
+              y="70"
               transform="rotate(-40 40,85)"
               fontFamily="Arial"
               fontWeight="600"
               fill="white"
               fontSize="26"
               >
-              ACTION
+              STUFF
             </text>
         </g>
       </svg>

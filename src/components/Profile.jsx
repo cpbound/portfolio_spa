@@ -4,23 +4,30 @@ const Profile = () => {
   return (
     <div className="profileBox">
       <div className="profileText">
-        🛠️🚧This'll be the profile bit one day. At the moment I'm using it as a
-        notes section. Pretty swell. Master Systems boxes are great, huh? Check
-        out their beauty here:{" "}
-        <a href="https://segaretro.org/Category:Master_System_UK_box_scans">
-          at Sega Retro
-        </a>
+        {" "}
+        Hullo, Chris here!
         <br />
         <br />
-        🛠️🚧The basic layout is okay. It isn't responsive yet but I'll get to
-        that. And it doesn't want to play nice with firefox yet but, again,
-        we'll get to that.
+        Originally from the UK, I have been living and working in Japan for over
+        10 years now.
         <br />
         <br />
-        🛠️🚧It's already June. Making this thing took way longer than I thought
-        but there you go. Trying to fit it in around part time jobs sucked but
-        was fun as hell when I got the chance to work on it. Desktop is done,
-        mobile is almost there. And I still think Master System boxes are great.
+        Since 2022 I've been working as a web developer, creating websites and
+        web applications. I've worked with a variety of technologies, including
+        React, Ruby, JS, MongoDB, and PostgreSQL.
+        <br />
+        <br />I have always had a passion for writing, creating music, film and
+        video games and now I'm applying that creative drive to the digital
+        space.
+        <br />
+        <br />
+        Why does my does my portfolio look like this? Because Sega Master System
+        box art is awesome, that's why. If you really don't believe me, then let
+        this chap convince you:
+        <br />
+        <a href="https://www.psychoandy.com/2021/07/the-complete-insanity-of-sega-master-system-video-game-box-art/">
+          The Complete Insanity Of Sega Master System Video Game Box Art
+        </a>{" "}
       </div>
     </div>
   );

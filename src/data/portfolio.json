@@ -1,6 +1,12 @@
 {
   "portfolio": [
     {
+      "cover": "/images/webby-thumb.png",
+      "title": "Portfolio Ver. 1",
+      "description": "My old JS and React portfolio. I'm keeping it here for posterity.",
+      "url": "https://ver1folio.netlify.app/"
+    },
+    {
       "cover": "/images/radio-thumb.png",
       "title": "Radiohead Gloom Index",
       "description": "Built with MUI and React, using a Radiohead data set to create mood appropriate playlists.",
@@ -9,7 +15,7 @@
     {
       "cover": "/images/jiffy-thumb.png",
       "title": "Reactor Jiffy",
-      "description": "A GIF search engine using the Giphy API. \nHey look! React practice! Lovely.",
+      "description": "A GIF search engine using the Giphy API. Hey look! React practice! Lovely.",
       "url": "https://reactor-jiff.netlify.app/"
     },
     {

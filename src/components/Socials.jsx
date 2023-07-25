@@ -65,7 +65,7 @@ export default function Socials(props) {
               rel="noreferrer"
               href="https://soundcloud.com/adult_time"
               onMouseEnter={() =>
-                setSocial(<i style={{ color: `#005DA3` }}>Soundcloud</i>)
+                setSocial(<i style={{ color: `#005DA3` }}>SoundCloud</i>)
               }
               onMouseLeave={() => setSocial("")}
             >
@@ -106,17 +106,6 @@ export default function Socials(props) {
             >
               https://actselect.chips.jp/
             </a>{" "}
-            {"\n"}
-            Cover image by{" "}
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://stablediffusionweb.com/"
-            >
-              Stable Diffusion.
-            </a>
-            {"\n"}
-            Prompt: {<i>"8 bit Tokyo Skyline at Night"</i>}
           </div>
           <img
             className="footerTitle"

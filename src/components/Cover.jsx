@@ -8,7 +8,7 @@ const Cover = (props) => {
       <div className="nameHeader">Christian Bound</div>
       <div className="subHeader">The web developer</div>
       <div className="mugshot">
-        <img src="/images/TokyoSkyline2.jpg" alt="mugshot" />
+        <img src="/images/Profile_pic_centre.jpg" alt="mugshot" />
       </div>
     </div>
   );
