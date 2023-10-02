@@ -97,12 +97,15 @@ body
   display: flex
   align-items: center
 
+  .homePng
+    margin: 0 0 0 4vw
+
 .homePng
-  width: 50%
+  width: 40%
 
 .container
   width: 100%
-  height: 100vh
+  height: 100%
   display: flex
   flex-direction: row-reverse
   background-color: #fff
@@ -146,11 +149,11 @@ body
 
 .mugshot
   text-align: center
-  margin-top: 2vh
+  margin-top: 0.3vh
 
   img
-    width: 60%
-    border-radius: 6%
+    width: 62%
+    border-radius: 8%
 
 .backCover
   margin-top: 2.8vh
@@ -163,9 +166,9 @@ body
   position: absolute
   border-radius: 3%
   box-shadow: 0.1vh 0.1vh 0.1vh 0.1vh #BDBCBB
-  top: 18vh
+  top: 17vh
   width: 27vw
-  height: 55vh
+  height: 54vh
 
   animation: fadeInAnimation ease 0.3s
   animation-iteration-count: 1
@@ -179,7 +182,7 @@ body
       opacity: 1
 
   .modalText
-    font-size: 2vh
+    font-size: 1.8vh
     text-align: center
 
   .closeIcon
@@ -203,7 +206,7 @@ body
 
 .projectHeader
   font-family: $georgian
-  margin: 1.4vh
+  margin: 1vh
 
 .projectDescription
   font-family: $rubik
@@ -352,6 +355,10 @@ $layout-breakpoint-small: 1200px
 @media (max-width: $layout-breakpoint-small)
   .container
     flex-direction: column
+    background-size: 40%
+
+  .homePng
+    width: 50%
 
   .nameHeader
     font-size: 20vw

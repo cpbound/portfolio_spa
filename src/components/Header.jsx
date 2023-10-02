@@ -5,8 +5,8 @@ const Header = (props) => {
     <div className="header">
       <svg
         viewBox="0 0 150 125"
-        width="25%"
-        height="25%"
+        width="22%"
+        height="22%"
         xmlns="http://www.w3.org/2000/svg"
         // preserveAspectRatio="xminYMin slice"
         fill={props.colour}
@@ -16,7 +16,7 @@ const Header = (props) => {
           <polygon points="0,0 150,0 0,125" />
 
           <text
-              x="34"
+              x="35"
               y="70"
               transform="rotate(-40 40,85)"
               fontFamily="Arial"
