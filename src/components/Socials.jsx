@@ -97,7 +97,7 @@ export default function Socials(props) {
         </div>
         <div className="footer">
           <div className="footerText">
-            2023 © Christian Bound {"\n"} Made In Japan {"\n"} Sega logo style
+            2025 © Christian Bound {"\n"} Made In Japan {"\n"} Sega logo style
             font from{" "}
             <a
               target="_blank"
