@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+
 import Portfolio from "./components/Portfolio";
 import Socials from "./components/Socials";
 import Profile from "./components/Profile";
@@ -36,25 +37,25 @@ const App = () => {
   const [colour] = useState(generateColor);
 
   return (
-    <div className="container">
-      <Cover colour={colour} />
-      <div className="spine">
-        <div className="spineText">Christian Bound</div>
-      </div>
-      <div className="backCover">
-        <img
-          className="homePng"
-          src="/images/HomeTitle.png"
-          alt="backCover"
-        />
-        <div className="allDetails">
-          <Portfolio />
-          <Profile />
-          <Socials colour={colour} />
+        <div className="container">
+          <Cover colour={colour} />
+          <div className="spine">
+            <div className="spineText">Christian Bound</div>
+          </div>
+          <div className="backCover">
+            <img
+              className="homePng"
+              src="/images/HomeTitle.png"
+              alt="backCover"
+            />
+            <div className="allDetails">
+              <Portfolio />
+              <Profile />
+              <Socials colour={colour} />
+            </div>
+          </div>
+          <div className="overlay"></div>
         </div>
-      </div>
-      <div className="overlay"></div>
-    </div>
   );
 };
 
