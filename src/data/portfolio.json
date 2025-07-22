@@ -1,7 +1,7 @@
 {
   "portfolio": [
     {
-      "cover": "/images/paper-svgrepo-com.svg",
+      "cover": "/images/listings-thumb.png",
       "title": "Mock Listings App",
       "description": "Built with TypeScript, React and Tailwind. It's a mock listing app, retooled from a previous assignment and built in under 24 hours.",
       "url": "https://tsdata.netlify.app/"
