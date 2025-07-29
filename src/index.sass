@@ -367,12 +367,13 @@ body
 .darkMode
   background-image: url("./assets/MDBackTile.png")
 
-// MOBILE FOLLOWS
+// MOBILE FOLLOWS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 $layout-breakpoint-small: 1200px
 
 @media (max-width: $layout-breakpoint-small)
   .projectsBox
+    max-width: fit-content
     display: grid
     grid-template-columns: 1fr
     gap: 2vw
@@ -415,7 +416,7 @@ $layout-breakpoint-small: 1200px
       margin: 1vw
 
     .projectHeader
-      font-size: 3.5vh
+      font-size: 3vh
       font-style: italic
       grid-area: 1 / 2
       text-align: right
@@ -435,10 +436,15 @@ $layout-breakpoint-small: 1200px
     flex-basis: 100%
     flex-direction: row
     justify-content: space-between
-    padding: 1vh 1vw 0
+    padding: 1vh 2.5vw 0
 
+  // Move .socialsBox out for correct specificity
   .socialsBox
-    display: grid
+    display: flex !important
+    flex-direction: row
+    flex-wrap: wrap
+    align-items: center
+    justify-content: flex-start
     padding: 1vh 1vw
     font-family: $georgian
     border: 0.2vh solid

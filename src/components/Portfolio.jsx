@@ -30,20 +30,25 @@ const Portfolio = () => {
     return (
       <div className="projectsBox">
         {portfolioData.portfolio.map((port, idx) => (
-          <div className="projectCard" key={idx} style={{ display: 'flex', alignItems: 'center'}}>
-            <a target="_blank" rel="noreferrer" href={port.url} style={{ flex: '0 0 auto' }}>
-              <img
-                className="projectThumbnail"
-                src={port.cover}
-                alt="portfolio"
-                style={{ width: '22vw', maxWidth: 120, borderRadius: 8 }}
-              />
-            </a>
+          <a
+            className="projectCard"
+            key={idx}
+            href={port.url}
+            target="_blank"
+            rel="noreferrer"
+            style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}
+          >
+            <img
+              className="projectThumbnail"
+              src={port.cover}
+              alt="portfolio"
+              style={{ width: '22vw', maxWidth: 120, borderRadius: 8 }}
+            />
             <div className="modalText" style={{ flex: '1 1 0', minWidth: 0 }}>
-              <h1 className="projectHeader" style={{ margin: 0 }}>{port.title}</h1>
-              <p className="projectDescription" style={{ margin: '1vw 0 0 0' }}>{port.description}</p>
+              <h1 className="projectHeader" style={{ margin: 0, fontSize: '4vw' }}>{port.title}</h1>
+              <p className="projectDescription" style={{ margin: '1vw 0 0 0', fontSize: '4vw' }}>{port.description}</p>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     );
