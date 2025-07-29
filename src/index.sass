@@ -371,6 +371,14 @@ body
 $layout-breakpoint-small: 1200px
 
 @media (max-width: $layout-breakpoint-small)
+  .projects
+    overflow: visible
+    height: auto
+  .projectsBox
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 2vw
+    padding: 2vw
   .container
     flex-direction: column
     background-size: 40%
