@@ -30,19 +30,18 @@ const Portfolio = () => {
     return (
       <div className="projectsBox">
         {portfolioData.portfolio.map((port, idx) => (
-          <div className="projectCard" key={idx}>
-            <div className="modalText">
-              <a target="_blank" rel="noreferrer" href={port.url}>
-                <img
-                  className="projectThumbnail"
-                  src={port.cover}
-                  alt="portfolio"
-                />
-              </a>
-              <h1 className="projectHeader">{port.title}</h1>
-              <hr />
-              <p className="projectDescription">{port.description}</p>
-              <hr />
+          <div className="projectCard" key={idx} style={{ display: 'flex', alignItems: 'center'}}>
+            <a target="_blank" rel="noreferrer" href={port.url} style={{ flex: '0 0 auto' }}>
+              <img
+                className="projectThumbnail"
+                src={port.cover}
+                alt="portfolio"
+                style={{ width: '22vw', maxWidth: 120, borderRadius: 8 }}
+              />
+            </a>
+            <div className="modalText" style={{ flex: '1 1 0', minWidth: 0 }}>
+              <h1 className="projectHeader" style={{ margin: 0 }}>{port.title}</h1>
+              <p className="projectDescription" style={{ margin: '1vw 0 0 0' }}>{port.description}</p>
             </div>
           </div>
         ))}

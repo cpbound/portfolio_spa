@@ -372,14 +372,18 @@ body
 $layout-breakpoint-small: 1200px
 
 @media (max-width: $layout-breakpoint-small)
-  .projects
-    overflow: visible
-    height: auto
   .projectsBox
     display: grid
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: 1fr
     gap: 2vw
     padding: 2vw
+    overflow-x: hidden
+    overflow-y: auto
+    width: 100vw
+    box-sizing: border-box
+    overflow-y: auto
+    width: 100vw
+    box-sizing: border-box
   .container
     flex-direction: column
     background-size: 40%
@@ -425,7 +429,6 @@ $layout-breakpoint-small: 1200px
 
   .profileBox
     padding: 6vw
-    background-color: whitesmoke
 
   .contactBox
     display: flex
