@@ -20,8 +20,8 @@ export default function Modal(props) {
       {showModal &&
         createPortal(
           <div className="portfolioModal" onClick={() => setShowModal(false)}>
+            <FaWindowClose className="closeIcon" />
             <div className="modalText">
-              <FaWindowClose className="closeIcon" />
               <a target="_blank" rel="noreferrer" href={props.portfolio.url}>
                 <img
                   className="projectThumbnail"
